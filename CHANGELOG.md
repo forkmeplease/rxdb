@@ -2,12 +2,35 @@
 # RxDB Changelog
 
 <!-- CHANGELOG NEWEST -->
-
+- FIX RxState.property$ should emit stable reference [#6462](https://github.com/pubkey/rxdb/pull/6462)
 <!-- ADD new changes here! -->
 
 <!-- /CHANGELOG NEWEST -->
 
 <!-- RELEASE BELOW -->
+
+### 15.34.1 (2 October 2024)
+
+- ADD proper error message if people miss out the `usesRxDatabaseInWorker` settings in OPFS.
+
+### 15.34.0 (1 October 2024)
+
+- FIX OPFS Storage based RxDatabase cannot be created inside of worker [via discord](https://discord.com/channels/969553741705539624/1290258375359336549)
+- IMPROVE performance of nested property access [#6406](https://github.com/pubkey/rxdb/pull/6406)
+- FIX firestore replication of multiple document with the same serverTimestamp [#6436](https://github.com/pubkey/rxdb/pull/6436)
+
+### 15.33.0 (10 September 2024)
+
+- ADD tutorial for a [local-first Vector Database](https://rxdb.info/articles/javascript-vector-database.html)
+- FIX RxPipeline tries to store metadata that does not match the json schema.
+- ADD utilities function for vector search.
+
+### 15.32.0 (26 August 2024)
+
+- ADD [Fulltext Search Plugin](https://rxdb.info/fulltext-search.html)
+- FIX `RangeError: Invalid count value` error in the OPFS and filesystem storage on cleanups.
+
+### 15.31.4 (22 August 2024)
 
 ### 15.31.3 (21 August 2024)
 

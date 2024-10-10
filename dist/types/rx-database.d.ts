@@ -29,7 +29,7 @@ export declare class RxDatabaseBase<Internals, InstanceCreationOptions, Collecti
     readonly allowSlowCount?: boolean | undefined;
     readonly reactivity?: RxReactivityFactory<any> | undefined;
     readonly idleQueue: IdleQueue;
-    readonly rxdbVersion = "15.31.3";
+    readonly rxdbVersion = "15.34.1";
     /**
      * Contains all known non-closed storage instances
      * that belong to this database.
@@ -41,7 +41,7 @@ export declare class RxDatabaseBase<Internals, InstanceCreationOptions, Collecti
      * Uniquely identifies the instance
      * of this RxDatabase.
      */
-    token: string, storage: RxStorage<Internals, InstanceCreationOptions>, instanceCreationOptions: InstanceCreationOptions, password: any, multiInstance: boolean, eventReduce: boolean, options: any, 
+    token: string, storage: RxStorage<Internals, InstanceCreationOptions>, instanceCreationOptions: InstanceCreationOptions, password: any, multiInstance: boolean, eventReduce: boolean | undefined, options: any, 
     /**
      * Stores information documents about the collections of the database
      */
